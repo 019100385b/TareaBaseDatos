@@ -157,7 +157,7 @@ as begin
 	--CodAlumno debe existir
 	if exists(select CodAlumno from TAlumno where CodAlumno=@CodAlumno)
 		begin
-			update TAlumno set CodAlumno = @CodAlumno, Apellidos = @Apellidos, Nombres = @Nombres, LugarNac = @LugarNac, FechaNac = @FechaNac, CodEscuela = @CodEscuela where CodEscuela = @CodEscuela
+			update TAlumno set Apellidos = @Apellidos, Nombres = @Nombres, LugarNac = @LugarNac, FechaNac = @FechaNac, CodEscuela = @CodEscuela where CodEscuela = @CodEscuela
 			select CodError = 0, Mensaje = 'Se actualizo correctamente alumno'
 		end
 	else select CodError = 1, Mensaje = 'Error: CodAlumno no existe'
