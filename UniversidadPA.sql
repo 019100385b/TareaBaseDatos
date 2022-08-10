@@ -1,6 +1,6 @@
 -- Procedimiento almacenados
--- Jesus Ninantay
--- 08/08/22
+-- Condori Contreras, Mike Marco
+-- 10/08/22
 
 --PA para Escuelas
 
